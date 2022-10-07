@@ -1,0 +1,27 @@
+{
+  "name": "bem-exercise-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/izzett222/bem-exercise-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izzett222/bem-exercise-3/issues"
+  },
+  "homepage": "https://github.com/izzett222/bem-exercise-3#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.6"
+  }
+}
