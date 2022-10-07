@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* gradient text */
+/* text-6xl bg-clip-text text-transparent bg-label-gradient font-bold w-fit */
