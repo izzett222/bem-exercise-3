@@ -1,6 +1,213 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
-/* gradient text */
-/* text-6xl bg-clip-text text-transparent bg-label-gradient font-bold w-fit */
+/* link */
+.link {
+    @apply text-sm text-primary;
+}
+.link--light {
+    @apply text-[#A5A6AC]
+}
+
+/* buttons */
+.btn {
+    @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl;
+}
+.btn--light {
+    @apply text-primary bg-white
+}
+.text--light-gray {
+    @apply text-[#A5A6AC]
+}
+
+/* list */
+.list {
+    @apply grid grid-cols-3 gap-8;
+}
+.list--gap-sm {
+    @apply gap-6
+}
+
+
+/* heading */
+.heading {
+    @apply text-xl font-bold text-primary;
+}
+.heading--sm {
+    @apply text-lg;
+}
+.heading--xs {
+    @apply text-sm;
+}
+.heading--md {
+    @apply text-2xl;
+}
+.heading--lg {
+    @apply text-3xl
+}
+.heading--xl {
+    @apply text-4xl;
+}
+.heading--center {
+    @apply text-center
+}
+.heading--light {
+    @apply text-white
+}
+
+/* paragraph  */
+.text {
+    @apply text-sm;
+}
+.text--lg {
+    @apply text-lg;
+}
+.text--center {
+    @apply text-center;
+}
+.text--bold {
+    @apply font-semibold
+}
+.text--light {
+    @apply text-white
+}
+
+/* gradients */
+.blur-gradient {
+    @apply w-72 h-72 rounded-full bg-blur-gradient blur-[120px];  
+  }
+.blur-gradient--oval {
+    @apply w-full h-[200px];
+}
+.label {
+    @apply text-xl bg-clip-text text-transparent bg-label-gradient font-bold w-fit;
+}
+.label--center {
+    @apply text-center
+}
+
+/* input */
+.input {
+    @apply bg-white rounded-[20px] h-[72px] w-full p-6
+}
+
+/* navbar */
+.navbar {
+    @apply flex justify-between items-center w-full py-2;
+}
+.navbar__list {
+    @apply flex gap-8 items-center
+}
+
+/* header */
+.header {
+    @apply pt-24 mb-32 max-w-5xl mx-auto flex flex-col items-center relative;
+}
+.header__title {
+    @apply max-w-3xl flex flex-col gap-8 mb-12 relative z-10 ;
+}
+.header__form {
+    @apply relative z-10 w-[576px] isolate flex justify-end items-center px-1 mb-16;
+}
+.header__input-wrapper {
+    @apply absolute z-0 left-0 right-0 w-auto;
+}
+.header__body {
+    @apply relative z-10
+}
+
+/* features */
+.features {
+    @apply flex gap-12 my-32 flex-col items-center;
+}
+.feature {
+    @apply flex flex-col gap-5 items-start;
+}
+.feature--divider {
+    @apply pr-8 border-r-2 border-solid border-[#CDC7D2]
+}
+
+/* about */
+.about {
+    @apply my-32 flex gap-[88px]
+}
+.about__list {
+    @apply flex flex-col gap-8;
+}
+.about__item {
+    @apply flex gap-6;
+}
+
+
+/* cta */
+.cta {
+    @apply -mx-20 bg-second-gradient flex gap-[88px] items-center px-20 py-16 mb-16;
+}
+
+
+/* logos */
+.logos {
+    @apply flex justify-around mb-32
+}
+
+
+/* discover */
+.discover {
+    @apply mx-32 flex gap-[88px]
+}
+.discover__list {
+    @apply flex flex-col gap-8;
+}
+.discover__item {
+    @apply flex gap-6;
+}
+
+
+/* testimonial */
+.testimonials {
+    @apply mx-32 flex gap-12 flex-col items-center;
+}
+.testimonial {
+    @apply p-16 flex flex-col border-[#D6E5FB] border-solid border-[2px] rounded-3xl gap-6
+}
+.testimonial__profile {
+    @apply flex flex-col items-center
+}
+
+
+/* view-price */
+.view-price {
+    @apply mt-32 pb-32 flex flex-col items-center gap-6 relative -mx-20;
+}
+
+.footer {
+    @apply relative z-10 bg-primary -mx-20 px-20 py-16
+}
+.footer__list {
+    @apply grid grid-cols-footer mb-12;
+}
+.footer__list-item {
+    @apply flex flex-col gap-8
+}
+.link-list {
+    @apply flex flex-col gap-2
+}
+.newsletter {
+    @apply flex flex-col gap-4
+}
+.newsletter__form {
+    @apply w-[410px] relative
+}
+.newsletter__btn-wrapper {
+    @apply absolute top-0 right-0;
+}
+.footer__line {
+    @apply border-solid border-[#888888] border-b-[2px] relative bottom-2
+}
+.footer__legal-wrapper {
+    @apply flex gap-10 justify-center
+}
+.footer__social {
+    @apply flex gap-6
+}
+@tailwind utilities;
