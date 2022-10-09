@@ -79,6 +79,9 @@
 .text--sm {
   @apply text-xs;
 }
+.text--quote {
+    @apply border-light-violet pl-5 border-solid border-l-2
+}
 
 /* gradients */
 .blur-gradient {
@@ -375,6 +378,13 @@
 .post__details {
     @apply pt-8 flex flex-col gap-4
 }
+.blog {
+    @apply max-w-3xl mx-auto -mt-16;
+}
+.blog__body {
+    @apply mt-5 flex flex-col gap-6;
+}
+
 
 /* footer */
 .footer {
