@@ -12,7 +12,8 @@ module.exports = {
     backgroundImage: {
       'label-gradient': "linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%)",
       'blur-gradient': "radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)",
-      'second-gradient': "radial-gradient(150.9% 900.65% at -49.5% -250%,#D798E1 17.55%,#9BFFA5 27.56%,#AED3FF 49.89%,#C9D4EF 56.53%,#CACFFA 65.69%)"
+      'second-gradient': "radial-gradient(150.9% 900.65% at -49.5% -250%,#D798E1 17.55%,#9BFFA5 27.56%,#AED3FF 49.89%,#C9D4EF 56.53%,#CACFFA 65.69%)",
+      linear: "linear-gradient(175.67deg, #D7E7F9 13.12%, #D5F4EC 96.48%)"
     },
     fontSize: {
       xs: ['14px', {lineHeight: '150%'}],
