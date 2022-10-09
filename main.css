@@ -20,7 +20,7 @@
   @apply text-primary bg-white;
 }
 .btn--full {
-    @apply w-full
+  @apply w-full;
 }
 .text--light-gray {
   @apply text-[#A5A6AC];
@@ -99,7 +99,7 @@
   @apply bg-white rounded-[20px] h-[72px] w-full p-6;
 }
 .input--area {
-    @apply h-36;
+  @apply h-36;
 }
 
 /* navbar */
@@ -284,30 +284,71 @@
   @apply flex flex-col gap-8 mb-12 relative z-10 items-center;
 }
 .contact__body {
-    @apply bg-[#F0F2FE] w-full p-16  rounded-3xl relative z-10
+  @apply bg-[#F0F2FE] w-full p-16  rounded-3xl relative z-10;
 }
 .contact__body-content {
-    @apply flex gap-36
+  @apply flex gap-36;
 }
 .contact__form {
-    @apply flex-[2] space-y-4;
+  @apply flex-[2] space-y-4;
 }
 .contact__details {
-    @apply flex-1 flex flex-col gap-9
+  @apply flex-1 flex flex-col gap-9;
 }
 .contact__item {
-    @apply flex gap-6
+  @apply flex gap-6;
 }
 .contact__row {
-    @apply flex gap-4;
+  @apply flex gap-4;
 }
 .contact__body-title {
-    @apply flex flex-col gap-4 mb-12
+  @apply flex flex-col gap-4 mb-12;
 }
 
+/* about us */
+.about {
+  @apply my-32 mx-auto max-w-3xl flex flex-col items-center gap-6;
+}
 
+/* vision */
+.vision {
+  @apply -mx-32 bg-second-gradient;
+}
+.vision__content {
+  @apply flex justify-between gap-16 px-20 py-24;
+}
+.vision__item {
+  @apply flex flex-col gap-6 w-[608px];
+}
 
+/* values */
+.values {
+  @apply flex gap-12 my-32 flex-col items-center;
+}
 
+.value {
+  @apply flex flex-col gap-5 items-start;
+}
+
+/* team */
+.team {
+    @apply flex gap-8;
+}
+.team__members {
+    @apply flex-1
+}
+.team__details {
+    @apply max-w-md;
+}
+.team-member {
+    @apply bg-light-violet rounded-xl
+}
+.team-member__img {
+    @apply w-full
+}
+.team-member__content {
+    @apply  py-6 px-8
+}
 /* footer */
 .footer {
   @apply relative z-10 bg-primary -mx-20 px-20 py-16;
