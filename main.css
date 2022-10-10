@@ -22,9 +22,6 @@
 .btn--full {
   @apply w-full;
 }
-.text--light-gray {
-  @apply text-[#A5A6AC];
-}
 
 /* list */
 .list {
@@ -62,10 +59,13 @@
 
 /* paragraph  */
 .text {
-  @apply text-sm;
+  @apply text-sm text-primary;
 }
 .text--lg {
   @apply text-lg;
+}
+.text--xl {
+  @apply text-[20px]
 }
 .text--center {
   @apply text-center;
@@ -82,10 +82,19 @@
 .text--quote {
     @apply border-light-violet pl-5 border-solid border-l-2
 }
+.text--light-gray {
+  @apply text-[#A5A6AC];
+}
+.text--faded {
+  @apply opacity-60
+}
+.text--faded-lg {
+  @apply opacity-[87%]
+}
 
 /* gradients */
 .blur-gradient {
-  @apply w-72 h-72 rounded-full bg-blur-gradient blur-[120px];
+  @apply w-72 h-72 rounded-full bg-second-gradient blur-[200px];
 }
 .blur-gradient--oval {
   @apply w-full h-[200px];
@@ -103,6 +112,9 @@
 }
 .input--area {
   @apply h-36;
+}
+.input--dark {
+  @apply bg-[#2B2E3C] rounded-lg h-14 w-[290px] py-4 pl-5;
 }
 
 /* navbar */
@@ -157,14 +169,20 @@
 }
 
 /* about */
-.about {
+.about-us {
   @apply my-32 flex gap-[88px];
 }
-.about__list {
+.about-us__list {
   @apply flex flex-col gap-8;
 }
-.about__item {
+.about-us__item {
   @apply flex gap-6;
+}
+.about-us__header {
+  @apply flex-1 flex flex-col gap-6
+}
+.about-us__body {
+  @apply flex-1 flex items-center;
 }
 
 /* cta */

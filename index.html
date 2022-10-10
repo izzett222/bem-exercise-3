@@ -22,8 +22,8 @@
         <li class="navbar__item"><a href="./index.html" class="link">Home</a></li>
         <li class="navbar__item"><a href="./product.html" class="link">Product</a></li>
         <li class="navbar__item"><a href="./pricing.html" class="link">Pricing</a></li>
-        <li class="navbar__item"><a href="#" class="link">About Us</a></li>
-        <li class="navbar__item"><a href="#" class="link">Blog</a></li>
+        <li class="navbar__item"><a href="./about.html" class="link">About Us</a></li>
+        <li class="navbar__item"><a href="./blog.html" class="link">Blog</a></li>
         <li class="navbar__item"><a href="./contact.html" class="link">Contact</a></li>
         <li class="navbar__item"><button class="btn">Free trial</button></li>
       </ul>
@@ -102,8 +102,8 @@
           </ul>
         </div>
       </section>
-      <section class="about">
-        <div class="flex-1 flex flex-col gap-6">
+      <section class="about-us">
+        <div class="about-us__header">
           <h4 class="label">Why should you work with us?</h4>
           <h2 class="heading heading--lg">
             To upscale your business to the next level
@@ -114,23 +114,23 @@
             erat, sed diam voluptua invidunt ut labore.
           </p>
         </div>
-        <div class="flex-1 flex items-center">
-          <ul class="about__list">
-            <li class="about__item">
+        <div class="about-us__body">
+          <ul class="about-us__list">
+            <li class="about-us__item">
               <img src="./assets/arrow.svg" alt="arrow" />
               <p class="text text--lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
             </li>
-            <li class="about__item">
+            <li class="about-us__item">
               <img src="./assets/arrow.svg" alt="arrow" />
               <p class="text text--lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod.
               </p>
             </li>
-            <li class="about__item">
+            <li class="about-us__item">
               <img src="./assets/arrow.svg" alt="arrow" />
               <p class="text text--lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -226,7 +226,7 @@
                 <h4 class="heading heading--md">
                   High security to protect from piracy
                 </h4>
-                <p class="text">
+                <p class="text text--faded-lg">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy.
                 </p>
@@ -236,7 +236,7 @@
               <div class="feature feature--divider">
                 <img src="./assets/message.svg" alt="shield" />
                 <h4 class="heading heading--md">Premium quality performance</h4>
-                <p class="text">
+                <p class="text text--faded-lg">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy.
                 </p>
@@ -248,7 +248,7 @@
                 <h4 class="heading heading--md">
                   Full time customer support - 24/7
                 </h4>
-                <p class="text">
+                <p class="text text--faded-lg">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy.
                 </p>
@@ -401,7 +401,7 @@
             <div class="newsletter__form">
               <input
                 type="text"
-                class="bg-[#2B2E3C] rounded-lg h-14 w-[290px] py-4 pl-5"
+                class="input input--dark"
                 placeholder="Enter your Email"
               />
               <div class="newsletter__btn-wrapper">
