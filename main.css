@@ -85,6 +85,9 @@
 .text--light-gray {
   @apply text-[#A5A6AC];
 }
+.text--dark-gray {
+  @apply text-[#6D6E76]
+}
 .text--faded {
   @apply opacity-60
 }
@@ -94,7 +97,7 @@
 
 /* gradients */
 .blur-gradient {
-  @apply w-72 h-72 rounded-full bg-second-gradient blur-[200px];
+  @apply w-72 h-72 rounded-full bg-second-gradient blur-[150px];
 }
 .blur-gradient--oval {
   @apply w-full h-[200px];
@@ -110,11 +113,17 @@
 .input {
   @apply bg-white rounded-[20px] h-[72px] w-full p-6;
 }
+.input--dark-placeholder {
+  @apply placeholder:opacity-80 placeholder:text-primary
+}
 .input--area {
   @apply h-36;
 }
 .input--dark {
-  @apply bg-[#2B2E3C] rounded-lg h-14 w-[290px] py-4 pl-5;
+  @apply bg-[#2B2E3C] h-14 w-[290px] py-4 pl-5;
+}
+.input--rounded-sm {
+  @apply rounded-lg
 }
 
 /* navbar */
@@ -336,7 +345,7 @@
 
 /* vision */
 .vision {
-  @apply -mx-32 bg-second-gradient;
+  @apply -mx-20 bg-second-gradient;
 }
 .vision__content {
   @apply flex justify-between gap-16 px-20 py-24;
@@ -383,7 +392,7 @@
     @apply flex-1
 }
 .trending-post__content {
-    @apply flex-1
+    @apply flex-1 flex flex-col gap-6
 }
 
 /* posts */
@@ -427,7 +436,7 @@
   @apply absolute top-0 right-0;
 }
 .footer__line {
-  @apply border-solid border-[#888888] border-b-[2px] relative bottom-2;
+  @apply border-solid border-[#888888] border-b-[2px] relative top-2;
 }
 .footer__legal-wrapper {
   @apply flex gap-10 justify-center;
