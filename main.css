@@ -11,10 +11,10 @@
 
 /* buttons */
 .btn {
-  @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl;
+  @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl hover:bg-[#313852];
 }
 .btn--secondary {
-  @apply text-primary bg-white border-solid border-light-violet border-[2px];
+  @apply text-primary bg-white border-solid border-light-violet border-[2px] hover:bg-primary hover:text-white;
 }
 .btn--light {
   @apply text-primary bg-white;
