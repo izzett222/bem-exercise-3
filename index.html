@@ -10,11 +10,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./dist/main.css">
   <title>home</title>
 </head>
 
-<body class="font-Roboto px-20">
+<body class="body">
   <header class="navbar">
     <div class="logo">
       <img src="./assets/logo.svg" alt="logo" class="logo__img">
@@ -35,7 +35,7 @@
         <h1 class="heading heading--xl heading--center">
           The Best Software to Grow your Sales and Services
         </h1>
-        <p class="text text--lg text-center">
+        <p class="text text--lg text--center">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
           erat.
@@ -46,21 +46,21 @@
           <input type="text" class="input" placeholder="Enter your Email">
         </div>
 
-        <button class="btn relative z-10">Get Free trial</button>
+        <button class="btn">Get Free trial</button>
       </form>
-      <div class="blur-gradient absolute bottom-[50%] left-[240px]"></div>
+      <div class="blur-gradient blur-gradient--left"></div>
       <div class="header__body">
         <img src="./assets/dashboard.png" alt="Dashboard" class="w-full h-full">
       </div>
     </header>
     <section class="features">
-      <div class="flex flex-col gap-6 max-w-xl items-center">
+      <div class="features__header">
         <h4 class="label label--center">High-quality</h4>
         <h2 class="heading heading--lg heading--center">
           We have the Best Solution for your Business
         </h2>
       </div>
-      <div class="bg-light-violet p-16 rounded-3xl">
+      <div class="features__body">
         <ul class="list">
           <li class="list__item">
             <div class="feature">
@@ -138,7 +138,7 @@
       </div>
     </section>
     <section class="cta">
-      <div class="flex-1 flex flex-col gap-6 items-start">
+      <div class="cta__header">
         <h4 class="label">Why should you work with us?</h4>
         <h2 class="heading heading--lg">
           To upscale your business to the next level
@@ -150,8 +150,8 @@
         </p>
         <button class="btn">Get Free trial</button>
       </div>
-      <div class="flex-1">
-        <img src="./assets/stats.png" class="max-w-xl max-h-[435px]" alt="stats">
+      <div class="cta__body">
+        <img src="./assets/stats.png" class="cta__img" alt="stats">
       </div>
     </section>
     <div class="logos">
@@ -159,7 +159,7 @@
         alt="logo"><img src="./assets/logo4.svg" alt="logo"><img src="./assets/logo5.svg" alt="">
     </div>
     <section class="discover">
-      <div class="flex-1 flex flex-col gap-6 items-start">
+      <div class="discover__header">
         <h4 class="label">Discover More</h4>
         <h2 class="heading heading--lg">
           Analyze your sales and marketing leads
@@ -170,11 +170,11 @@
           erat, sed diam voluptua invidunt ut labore.
         </p>
       </div>
-      <div class="flex-1">
+      <div class="discover__body">
         <ul class="discover__list">
           <li class="discover__item">
             <img src="./assets/level.svg" alt="arrow">
-            <div class="space-y-2">
+            <div class="discover__item-body">
               <h4 class="heading">Sales Tracking</h4>
               <p class="text text--lg">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
@@ -183,7 +183,7 @@
           </li>
           <li class="discover__item">
             <img src="./assets/ninja.svg" alt="arrow">
-            <div class="space-y-2">
+            <div class="discover__item-body">
               <h4 class="heading">Project Management</h4>
               <p class="text text--lg">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
@@ -192,7 +192,7 @@
           </li>
           <li class="discover__item">
             <img src="./assets/profile.svg" alt="arrow">
-            <div class="space-y-2">
+            <div class="discover__item-body">
               <h4 class="heading">Activity Report</h4>
               <p class="text text--lg">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
@@ -203,10 +203,10 @@
       </div>
     </section>
     <section class="features">
-      <div class="flex flex-col gap-6 max-w-xl items-center">
+      <div class="features__header">
         <h2 class="heading heading--lg heading--center">Features</h2>
       </div>
-      <div class="bg-[#F9F0FB] p-16 rounded-3xl">
+      <div class="features__body features__body--secondary">
         <ul class="list">
           <li class="list__item">
             <div class="feature feature--divider">
@@ -246,12 +246,11 @@
       </div>
     </section>
     <section class="testimonials">
-      <div class="flex flex-col gap-6 max-w-2xl items-center">
+      <div class="testimonials__header">
         <h2 class="heading heading--lg heading--center">
           The stunning results our customers have experienced
         </h2>
       </div>
-      <div class="rounded-3xl">
         <ul class="list list--sm">
           <li class="list__item">
             <div class="testimonial">
@@ -261,7 +260,7 @@
                 aliquyam erat, sed diam voluptua.
               </p>
               <div class="testimonial__profile">
-                <img src="./assets/prof1.png" class="mb-3" alt="profile">
+                <img src="./assets/prof1.png" class="testimonial__profile-img" alt="profile">
                 <h5 class="heading heading--sm">Ron Wood</h5>
                 <p class="text text--sm">CEO</p>
               </div>
@@ -275,7 +274,7 @@
                 aliquyam erat, sed diam voluptua.
               </p>
               <div class="testimonial__profile">
-                <img src="./assets/prof2.png" class="mb-3" alt="profile">
+                <img src="./assets/prof2.png" class="testimonial__profile-img" alt="profile">
                 <h5 class="heading heading--sm">Ron Wood</h5>
                 <p class="text text--sm">CEO</p>
               </div>
@@ -289,26 +288,25 @@
                 aliquyam erat, sed diam voluptua.
               </p>
               <div class="testimonial__profile">
-                <img src="./assets/prof3.png" class="mb-3" alt="profile">
+                <img src="./assets/prof3.png" class="testimonial__profile-img" alt="profile">
                 <h5 class="heading heading--sm">Ron Wood</h5>
                 <p class="text text--sm">CEO</p>
               </div>
             </div>
           </li>
         </ul>
-      </div>
     </section>
     <section class="view-price">
-      <h2 class="heading heading--lg heading--center relative z-10">
+      <h2 class="heading heading--lg heading--center">
         Are you ready to grow your <br>
         business with us?
       </h2>
-      <p class="text text--center relative z-10">
+      <p class="text text--center">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
         nonumy.
       </p>
-      <button class="btn relative z-10">View Pricing</button>
-      <div class="blur-gradient blur-gradient--oval absolute bottom-[-100px] left-0 right-0 w-auto"></div>
+      <button class="btn">View Pricing</button>
+      <div class="blur-gradient blur-gradient--oval"></div>
     </section>
   </main>
   <footer class="footer">
@@ -402,9 +400,9 @@
           <div class="footer__legal-wrapper">
             <p class="text text--light-gray">© Copyright Finsweet 2022</p>
             <div class="footer__social">
-              <img src="./assets/facebook.svg" class="w-full" alt="facebook"><img src="./assets/twitter.svg"
-                class="w-full" alt="twitter"><img src="./assets/instagram.svg" class="w-full" alt="instagram"><img
-                src="./assets/linkedin.svg" alt="linkedin">
+              <img src="./assets/facebook.svg" class="footer__icon" alt="facebook"><img src="./assets/twitter.svg"
+                class="footer__icon" alt="twitter"><img src="./assets/instagram.svg" class="footer__icon" alt="instagram"><img
+                src="./assets/linkedin.svg" class="footer__icon" alt="linkedin">
             </div>
           </div>
         </li>

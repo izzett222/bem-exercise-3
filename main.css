@@ -11,7 +11,7 @@
 
 /* buttons */
 .btn {
-  @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl hover:bg-[#313852];
+  @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl hover:bg-[#313852] relative z-10;
 }
 .btn--secondary {
   @apply text-primary bg-white border-solid border-light-violet border-[2px] hover:bg-primary hover:text-white;
@@ -33,7 +33,7 @@
 
 /* heading */
 .heading {
-  @apply text-xl font-bold text-primary;
+  @apply text-xl font-bold text-primary relative z-10;
 }
 .heading--sm {
   @apply text-lg;
@@ -59,7 +59,7 @@
 
 /* paragraph  */
 .text {
-  @apply text-sm text-primary;
+  @apply text-sm text-primary relative z-10;
 }
 .text--lg {
   @apply text-lg;
@@ -100,7 +100,16 @@
   @apply w-72 h-72 rounded-full bg-second-gradient blur-[150px];
 }
 .blur-gradient--oval {
-  @apply w-full h-[200px];
+  @apply h-[200px]  absolute bottom-[-100px] left-0 right-0 w-auto;
+}
+.blur-gradient--left {
+  @apply  absolute bottom-[50%] left-[240px];
+}
+.blur-gradient--bottom {
+ @apply absolute bottom-[10%] right-[240px]
+}
+.blur-gradient--out-of-container {
+  @apply absolute bottom-[-200px] left-[-80px]
 }
 .label {
   @apply text-xl bg-clip-text text-transparent bg-label-gradient font-bold w-fit;
@@ -126,6 +135,11 @@
   @apply rounded-lg
 }
 
+/* body */
+
+.body {
+  @apply font-Roboto px-20
+}
 /* navbar */
 .navbar {
   @apply flex justify-between items-center w-full py-2;
@@ -137,6 +151,9 @@
 /* header */
 .header {
   @apply pt-24 mb-32 max-w-5xl mx-auto flex flex-col items-center relative;
+}
+.header__body-img {
+  @apply w-full h-full
 }
 .header--full {
     @apply max-w-[initial]
@@ -163,6 +180,18 @@
 /* features */
 .features {
   @apply flex gap-12 my-32 flex-col items-center;
+}
+.features__header {
+  @apply flex flex-col gap-6 max-w-xl items-center
+}
+.features__body {
+  @apply bg-light-violet p-16 rounded-3xl;
+}
+.features__body--rounded-tr {
+  @apply mr-20 rounded-tl-none rounded-bl-none rounded-br-none rounded-tr-[67px]
+}
+.features__body--secondary {
+  @apply bg-[#F9F0FB]
 }
 .features--gradient {
   @apply bg-second-gradient pt-32;
@@ -198,7 +227,15 @@
 .cta {
   @apply -mx-20 bg-second-gradient flex gap-[88px] items-center px-20 py-16 mb-16;
 }
-
+.cta__header {
+  @apply flex-1 flex flex-col gap-6 items-start;
+}
+.cta__body {
+  @apply flex-1
+}
+.cta__img {
+  @apply max-w-xl max-h-[435px];
+}
 /* logos */
 .logos {
   @apply flex justify-around mb-32;
@@ -208,22 +245,37 @@
 .discover {
   @apply mx-32 flex gap-[88px];
 }
+.discover__header {
+  @apply flex-1 flex flex-col gap-6 items-start;
+}
+.discover__body {
+  @apply flex-1;
+}
 .discover__list {
   @apply flex flex-col gap-8;
 }
 .discover__item {
   @apply flex gap-6;
 }
+.discover__item-body {
+  @apply space-y-2;
+}
 
 /* testimonial */
 .testimonials {
   @apply mx-32 flex gap-12 flex-col items-center;
+}
+.testimonials__header {
+  @apply flex flex-col gap-6 max-w-2xl items-center
 }
 .testimonial {
   @apply p-16 flex flex-col border-[#D6E5FB] border-solid border-[2px] rounded-3xl gap-6;
 }
 .testimonial__profile {
   @apply flex flex-col items-center;
+}
+.testimonial__profile-img {
+  @apply mb-3;
 }
 
 /* view-price */
@@ -443,5 +495,8 @@
 }
 .footer__social {
   @apply flex gap-6;
+}
+.footer__icon {
+  @apply w-full opacity-60
 }
 @tailwind utilities;
