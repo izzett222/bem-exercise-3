@@ -2,8 +2,11 @@
 @tailwind components;
 
 /* link */
-.link, .navbar__link {
+.link, .navbar__link, .footer__link {
   @apply text-sm text-primary;
+}
+.footer__link {
+  @apply text-[#A5A6AC];
 }
 .link--light {
   @apply text-[#A5A6AC];
@@ -103,6 +106,9 @@
 }
 .services__text {
  @apply text-sm text-primary relative z-10 opacity-[87%];
+}
+.footer__newsletter-text {
+  @apply text-sm relative z-10 font-semibold text-white;
 }
 .header__text--left {
   @apply text-left;
