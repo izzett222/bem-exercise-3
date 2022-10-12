@@ -7,7 +7,8 @@ module.exports = {
       blue: "#6B7CFF",
       'light-violet': "#E0E4FC",
       "white": "#fff",
-      transparent: "transparent"
+      transparent: "transparent",
+      'light-blue': "#A5A6AC",
     },
     backgroundImage: {
       'label-gradient': "linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%)",

@@ -506,7 +506,16 @@ video {
 
 /* link */
 
-.link,  .navbar__link,  .footer__link {
+.link {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.navbar__link {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -514,6 +523,10 @@ video {
 }
 
 .footer__link {
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  font-family: Roboto, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(165 166 172 / var(--tw-text-opacity));
 }
@@ -535,6 +548,7 @@ video {
   padding-right: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
@@ -550,6 +564,7 @@ video {
 .footer__btn {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-family: Roboto, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
@@ -606,6 +621,7 @@ video {
 .heading,  .discover__item-heading {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   line-height: 140%;
   font-weight: 700;
@@ -617,6 +633,7 @@ video {
   position: relative;
   z-index: 10;
   text-align: center;
+  font-family: Roboto, sans-serif;
   font-size: 48px;
   line-height: 120%;
   font-weight: 700;
@@ -624,13 +641,26 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
+.footer__link-list-item-heading {
+  position: relative;
+  z-index: 10;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .header__heading--left {
   text-align: left;
+  font-family: Roboto, sans-serif;
 }
 
 .features__card-heading {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 700;
@@ -641,6 +671,7 @@ video {
 .about-us__heading,  .features__card-heading--lg {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 36px;
   line-height: 120%;
   font-weight: 700;
@@ -651,6 +682,7 @@ video {
 .cta__heading,  .discover__heading,  .services__heading {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 48px;
   line-height: 120%;
   font-weight: 700;
@@ -661,6 +693,7 @@ video {
 .testimonials__profile-heading {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 150%;
   font-weight: 700;
@@ -704,9 +737,10 @@ video {
 
 /* paragraph  */
 
-.text, .features__card-text,  .about-us__text,  .cta__text,  .discover__text {
+.text,  .features__card-text,  .about-us__text,  .cta__text,  .discover__text {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -717,6 +751,7 @@ video {
   position: relative;
   z-index: 10;
   text-align: center;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -727,6 +762,7 @@ video {
   position: relative;
   z-index: 10;
   text-align: center;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 600;
@@ -737,6 +773,7 @@ video {
 .testimonial__profile-text {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -747,6 +784,7 @@ video {
   position: relative;
   z-index: 10;
   text-align: center;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -756,6 +794,7 @@ video {
 .footer__legal-text {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -765,6 +804,7 @@ video {
 .services__text {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -775,6 +815,7 @@ video {
 .footer__newsletter-text {
   position: relative;
   z-index: 10;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 600;
@@ -850,6 +891,18 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.services__blur-gradient {
+  position: absolute;
+  bottom: -200px;
+  left: -80px;
+  height: 18rem;
+  width: 18rem;
+  border-radius: 9999px;
+  background-image: radial-gradient(150.9% 900.65% at -49.5% -250%,#D798E1 17.55%,#9BFFA5 27.56%,#AED3FF 49.89%,#C9D4EF 56.53%,#CACFFA 65.69%);
+  --tw-blur: blur(150px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .blur-gradient--oval {
   position: absolute;
   bottom: -100px;
@@ -865,7 +918,7 @@ video {
   left: 240px;
 }
 
-.blur-gradient--bottom {
+.blur-gradient--bottom,  ..services__blur-gradient--bottom {
   position: absolute;
   bottom: 10%;
   right: 240px;
@@ -962,6 +1015,8 @@ video {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .navbar__list {
@@ -981,6 +1036,8 @@ video {
   max-width: 64rem;
   flex-direction: column;
   align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
   padding-top: 6rem;
 }
 
@@ -1061,6 +1118,8 @@ video {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .features__label {
@@ -1102,7 +1161,6 @@ video {
 
 .features--full {
   margin-left: -5rem;
-  margin-right: -5rem;
 }
 
 .features__card {
@@ -1127,6 +1185,8 @@ video {
   margin-bottom: 8rem;
   display: flex;
   gap: 88px;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .about-us__list {
@@ -1156,8 +1216,6 @@ video {
 /* cta */
 
 .cta {
-  margin-left: -5rem;
-  margin-right: -5rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -1277,8 +1335,6 @@ video {
 
 .view-price {
   position: relative;
-  margin-left: -5rem;
-  margin-right: -5rem;
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -1301,6 +1357,8 @@ video {
 .services {
   margin-top: 8rem;
   margin-bottom: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .services__row {
@@ -1706,8 +1764,6 @@ video {
 .footer {
   position: relative;
   z-index: 10;
-  margin-left: -5rem;
-  margin-right: -5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
   padding-left: 5rem;
