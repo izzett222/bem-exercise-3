@@ -1141,7 +1141,7 @@ video {
   padding: 4rem;
 }
 
-.features__body--rounded-tr {
+.features__body--rounded-top-right {
   margin-right: 5rem;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;

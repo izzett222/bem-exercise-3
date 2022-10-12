@@ -263,7 +263,7 @@
 .features__body {
   @apply bg-light-violet p-16 rounded-3xl;
 }
-.features__body--rounded-tr {
+.features__body--rounded-top-right {
   @apply mr-20 rounded-tl-none rounded-bl-none rounded-br-none rounded-tr-[67px]
 }
 .features__body--secondary {
