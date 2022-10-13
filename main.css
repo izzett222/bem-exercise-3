@@ -19,14 +19,26 @@
 }
 
 /* buttons */
-.btn, .header__btn, .call-to-action__btn, .view-price__btn, .footer__btn {
+.btn  {
   @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl hover:bg-hover-primary relative z-10 font-Roboto;
 }
-.footer__btn {
-  @apply bg-white text-primary font-Roboto;
+.header__btn {
+  @apply btn
 }
-.btn--secondary, .header__btn--secondary {
+.call-to-action__btn {
+  @apply btn
+}
+.view-price__btn {
+  @apply btn
+}
+.footer__btn {
+  @apply btn bg-white text-primary font-Roboto
+}
+.btn--secondary {
   @apply text-primary bg-white border-solid border-light-violet border-[2px] hover:bg-primary hover:text-white;
+}
+.header__btn--secondary {
+  @apply btn--secondary
 }
 .btn--light {
   @apply text-primary bg-white;
@@ -36,8 +48,14 @@
 }
 
 /* list */
-.list, .features__list, .footer__legal-list {
+.list {
   @apply grid grid-cols-3 gap-8;
+}
+.features__list {
+  @apply list
+}
+.footer__legal-list {
+  @apply list
 }
 .testimonials__list {
   @apply grid grid-cols-3 gap-6;
@@ -47,12 +65,24 @@
 }
 
 /* heading */
-.heading, .discover__item-heading {
+.heading {
   @apply text-xl font-bold text-primary relative z-10 font-Roboto;
 }
-.features__heading, .header__heading, .testimonials__heading, .view-price__heading {
+.discover__item-heading  {
+  @apply heading
+}
+.features__heading  {
   @apply  font-bold text-primary relative z-10 text-3xl text-center font-Roboto;
 }
+.header__heading {
+  @apply features__heading
+}
+ .testimonials__heading {
+  @apply features__heading
+ }
+ .view-price__heading {
+  @apply features__heading
+ }
 .footer__link-list-item-heading {
   @apply font-bold relative z-10 font-Roboto text-lg text-white;
 }
@@ -62,11 +92,20 @@
 .features__card-heading {
   @apply font-bold text-primary relative z-10 text-lg font-Roboto;
 }
-.about-us__heading, .features__card-heading--lg {
+.about-us__heading {
   @apply font-bold text-primary relative z-10 text-2xl font-Roboto;
 }
-.call-to-action__heading, .discover__heading, .services__heading {
+.features__card-heading--lg {
+  @apply about-us__heading
+}
+.call-to-action__heading{
   @apply font-bold text-primary relative z-10 text-3xl font-Roboto;
+}
+.discover__heading {
+  @apply call-to-action__heading
+}
+.services__heading {
+  @apply call-to-action__heading
 }
 .testimonials__profile-heading {
   @apply font-bold text-primary relative z-10 text-lg font-Roboto;
@@ -95,11 +134,29 @@
 }
 
 /* paragraph  */
-.text, .features__card-text, .about-us__text, .call-to-action__text, .discover__text  {
+.text  {
   @apply text-sm text-primary relative z-10 font-Roboto;
 }
-.header__text, .about-us__item-text, .discover__item-text {
+.features__card-text {
+  @apply text
+}
+.about-us__text {
+  @apply text
+}
+.call-to-action__text {
+  @apply text
+}
+.discover__text {
+  @apply text
+}
+.header__text  {
   @apply text-lg text-primary relative z-10 text-center font-Roboto;
+}
+.about-us__item-text {
+  @apply header__text
+}
+.discover__item-text {
+  @apply header__text
 }
 .testimonials__card-text {
   @apply text-sm text-primary relative z-10 text-center font-semibold font-Roboto;
@@ -143,11 +200,17 @@
 .text--quote {
     @apply border-light-violet pl-5 border-solid border-l-2
 }
-.text--light-gray, .features__card-text--light-gray {
+.text--light-gray  {
   @apply text-light-blue;
 }
-.text--dark-gray, .features__card-text--dark-gray {
+.features__card-text--light-gray {
+  @apply text--light-gray
+}
+.text--dark-gray {
   @apply text-text-dark-gray
+}
+.features__card-text--dark-gray {
+  @apply text--dark-gray
 }
 .text--faded {
   @apply opacity-60
@@ -157,8 +220,14 @@
 }
 
 /* gradients */
-.blur-gradient, .header__blur-gradient, .view-price__blur-gradient {
+.blur-gradient {
   @apply w-72 h-72 rounded-full bg-second-gradient blur-[150px];
+}
+.header__blur-gradient {
+  @apply blur-gradient
+}
+.view-price__blur-gradient {
+  @apply blur-gradient
 }
 .services__blur-gradient {
   @apply w-72 h-72 rounded-full bg-second-gradient blur-[150px] absolute bottom-[-200px] left-[-80px];
@@ -175,19 +244,39 @@
 .blur-gradient--out-of-container {
   @apply absolute bottom-[-200px] left-[-80px]
 }
-.label, .features__label, .about-us__label, .call-to-action__label, .discover__label, .services__label {
+
+/* label */
+.label  {
   @apply text-xl bg-clip-text text-transparent bg-label-gradient font-bold w-fit;
+}
+.features__label {
+  @apply label;
+}
+.about-us__label {
+  @apply label;
+}
+.call-to-action__label {
+  @apply label;
+}
+.discover__label {
+  @apply label;
+}
+.services__label {
+  @apply label;
 }
 .label--center {
   @apply text-center;
 }
 
 /* input */
-.input, .header__input, .footer__input {
+.input  {
   @apply bg-white rounded-[20px] h-[72px] w-full p-6;
 }
+.header__input {
+  @apply input
+}
 .footer__input {
-  @apply bg-dark-blue h-14 w-[290px] py-4 pl-5 rounded-lg;
+  @apply input bg-dark-blue h-14 w-[290px] py-4 pl-5 rounded-lg
 }
 .input--dark-placeholder {
   @apply placeholder:opacity-80 placeholder:text-primary
