@@ -538,7 +538,7 @@ video {
 
 /* buttons */
 
-.btn,  .header__btn,  .cta__btn,  .view-price__btn,  .footer__btn {
+.btn,  .header__btn,  .call-to-action__btn,  .view-price__btn,  .footer__btn {
   position: relative;
   z-index: 10;
   border-radius: 0.75rem;
@@ -556,7 +556,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.btn:hover,  .header__btn:hover,  .cta__btn:hover,  .view-price__btn:hover,  .footer__btn:hover {
+.btn:hover,  .header__btn:hover,  .call-to-action__btn:hover,  .view-price__btn:hover,  .footer__btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(49 56 82 / var(--tw-bg-opacity));
 }
@@ -679,7 +679,7 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.cta__heading,  .discover__heading,  .services__heading {
+.call-to-action__heading,  .discover__heading,  .services__heading {
   position: relative;
   z-index: 10;
   font-family: Roboto, sans-serif;
@@ -737,7 +737,7 @@ video {
 
 /* paragraph  */
 
-.text,  .features__card-text,  .about-us__text,  .cta__text,  .discover__text {
+.text,  .features__card-text,  .about-us__text,  .call-to-action__text,  .discover__text {
   position: relative;
   z-index: 10;
   font-family: Roboto, sans-serif;
@@ -930,7 +930,7 @@ video {
   left: -80px;
 }
 
-.label,  .features__label,  .about-us__label,  .cta__label,  .discover__label,  .services__label {
+.label,  .features__label,  .about-us__label,  .call-to-action__label,  .discover__label,  .services__label {
   width: -moz-fit-content;
   width: fit-content;
   background-image: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
@@ -1213,9 +1213,9 @@ video {
   align-items: center;
 }
 
-/* cta */
+/* call-to-action */
 
-.cta {
+.call-to-action {
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -1227,7 +1227,7 @@ video {
   padding-bottom: 4rem;
 }
 
-.cta__header {
+.call-to-action__header {
   display: flex;
   flex: 1 1 0%;
   flex-direction: column;
@@ -1235,11 +1235,11 @@ video {
   gap: 1.5rem;
 }
 
-.cta__body {
+.call-to-action__body {
   flex: 1 1 0%;
 }
 
-.cta__img {
+.call-to-action__img {
   max-height: 435px;
   max-width: 36rem;
 }
@@ -1942,6 +1942,16 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.border-light-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(165 166 172 / var(--tw-border-opacity));
+}
+
+.border-blue {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 124 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#F9F0FB\] {

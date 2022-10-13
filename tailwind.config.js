@@ -6,9 +6,16 @@ module.exports = {
       primary: "#1D2130",
       blue: "#6B7CFF",
       'light-violet': "#E0E4FC",
-      "white": "#fff",
+      white: "#fff",
       transparent: "transparent",
       'light-blue': "#A5A6AC",
+      'hover-primary': "#313852",
+      "dark-blue": "#2B2E3C",
+      "light-pink": "#F9F0FB",
+      "light-purple": "#CDC7D2",
+      "text-dark-gray": "#6D6E76",
+      "border-light-blue": "#D6E5FB",
+      "border-blue": "#6B7CFF"
     },
     backgroundImage: {
       'label-gradient': "linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%)",

@@ -19,8 +19,8 @@
 }
 
 /* buttons */
-.btn, .header__btn, .cta__btn, .view-price__btn, .footer__btn {
-  @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl hover:bg-[#313852] relative z-10 font-Roboto;
+.btn, .header__btn, .call-to-action__btn, .view-price__btn, .footer__btn {
+  @apply text-sm text-white font-bold bg-primary px-10 py-4 rounded-xl hover:bg-hover-primary relative z-10 font-Roboto;
 }
 .footer__btn {
   @apply bg-white text-primary font-Roboto;
@@ -65,7 +65,7 @@
 .about-us__heading, .features__card-heading--lg {
   @apply font-bold text-primary relative z-10 text-2xl font-Roboto;
 }
-.cta__heading, .discover__heading, .services__heading {
+.call-to-action__heading, .discover__heading, .services__heading {
   @apply font-bold text-primary relative z-10 text-3xl font-Roboto;
 }
 .testimonials__profile-heading {
@@ -95,7 +95,7 @@
 }
 
 /* paragraph  */
-.text, .features__card-text, .about-us__text, .cta__text, .discover__text  {
+.text, .features__card-text, .about-us__text, .call-to-action__text, .discover__text  {
   @apply text-sm text-primary relative z-10 font-Roboto;
 }
 .header__text, .about-us__item-text, .discover__item-text {
@@ -147,7 +147,7 @@
   @apply text-light-blue;
 }
 .text--dark-gray, .features__card-text--dark-gray {
-  @apply text-[#6D6E76]
+  @apply text-text-dark-gray
 }
 .text--faded {
   @apply opacity-60
@@ -175,7 +175,7 @@
 .blur-gradient--out-of-container {
   @apply absolute bottom-[-200px] left-[-80px]
 }
-.label, .features__label, .about-us__label, .cta__label, .discover__label, .services__label {
+.label, .features__label, .about-us__label, .call-to-action__label, .discover__label, .services__label {
   @apply text-xl bg-clip-text text-transparent bg-label-gradient font-bold w-fit;
 }
 .label--center {
@@ -187,7 +187,7 @@
   @apply bg-white rounded-[20px] h-[72px] w-full p-6;
 }
 .footer__input {
-  @apply bg-[#2B2E3C] h-14 w-[290px] py-4 pl-5 rounded-lg;
+  @apply bg-dark-blue h-14 w-[290px] py-4 pl-5 rounded-lg;
 }
 .input--dark-placeholder {
   @apply placeholder:opacity-80 placeholder:text-primary
@@ -196,7 +196,7 @@
   @apply h-36;
 }
 .input--dark {
-  @apply bg-[#2B2E3C] h-14 w-[290px] py-4 pl-5;
+  @apply bg-dark-blue h-14 w-[290px] py-4 pl-5;
 }
 .input--rounded-sm {
   @apply rounded-lg
@@ -267,7 +267,7 @@
   @apply mr-20 rounded-tl-none rounded-bl-none rounded-br-none rounded-tr-[67px]
 }
 .features__body--secondary {
-  @apply bg-[#F9F0FB]
+  @apply bg-light-pink
 }
 .features--gradient {
   @apply bg-second-gradient pt-32;
@@ -279,7 +279,7 @@
   @apply flex flex-col gap-5 items-start;
 }
 .features__card--divider {
-  @apply pr-8 border-r-2 border-solid border-[#CDC7D2];
+  @apply pr-8 border-r-2 border-solid border-light-purple;
 }
 
 /* about */
@@ -299,17 +299,17 @@
   @apply flex-1 flex items-center;
 }
 
-/* cta */
-.cta {
+/* call-to-action */
+.call-to-action {
   @apply bg-second-gradient flex gap-[88px] items-center px-20 py-16 mb-16;
 }
-.cta__header {
+.call-to-action__header {
   @apply flex-1 flex flex-col gap-6 items-start;
 }
-.cta__body {
+.call-to-action__body {
   @apply flex-1
 }
-.cta__img {
+.call-to-action__img {
   @apply max-w-xl max-h-[435px];
 }
 /* logos */
@@ -345,7 +345,7 @@
   @apply flex flex-col gap-6 max-w-2xl items-center
 }
 .testimonials__card {
-  @apply p-16 flex flex-col border-[#D6E5FB] border-solid border-[2px] rounded-3xl gap-6;
+  @apply p-16 flex flex-col border-border-light-blue border-solid border-[2px] rounded-3xl gap-6;
 }
 .testimonial__profile {
   @apply flex flex-col items-center;
@@ -405,7 +405,7 @@
   @apply flex flex-col items-center bg-white rounded-3xl pb-12;
 }
 .price-card--best {
-  @apply bg-linear border-4 border-solid border-[#6B7CFF];
+  @apply bg-linear border-4 border-solid border-border-blue;
 }
 .price-card__header {
   @apply border-solid border-b-[2px] border-[#D8D8D8] pl-12 flex gap-6 p-12 items-center self-start w-full;
